@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/login_bacgount_3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.GamerProfilFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:id="@+id/GameProfileLinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="7dp"
+                    app:cardBackgroundColor="#B3ACAC">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="#9EF6D5D5"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+                                android:id="@+id/profil_durum_baslik"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:fontFamily="@font/font2"
+                                android:gravity="center"
+                                android:text="sesli sohbet"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/profil_durum_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font2"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="7dp"
+                    app:cardBackgroundColor="#B3ACAC">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="#9EF6D5D5"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+                                android:id="@+id/profil_durum_baslik2"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:fontFamily="@font/font2"
+                                android:gravity="center"
+                                android:text="Rankınız"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/profil_durum_text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font2"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="7dp"
+                    app:cardBackgroundColor="#B3ACAC">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout3"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="#9EF6D5D5"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+                                android:id="@+id/profil_durum_baslik3"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:fontFamily="@font/font2"
+                                android:gravity="center"
+                                android:text="Cinsiyet"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/profil_durum_text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font2"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="7dp"
+                    app:cardBackgroundColor="#B3ACAC">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/ouncuTanimlama"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:background="#9EF6D5D5"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:fontFamily="@font/font2"
+                                android:gravity="center"
+                                android:text="DURUM"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/oyuncuTanimlamaText"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:fontFamily="@font/font2"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:padding="4dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/ouncuTanimlama"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="134dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardBackgroundColor="#9E987DB1"
+                    app:cardCornerRadius="35dp"
+                    app:cardElevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/degiştirBTN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/icons8_update"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/GameProfileLinearlayout_2"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints">
+
+
+
+
+
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="7dp"
+                    app:cardBackgroundColor="#B3ACAC">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+
+
+                            android:id="@+id/linearLayout6"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="#9EF6D5D5"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:fontFamily="@font/font2"
+                                android:gravity="center"
+                                android:text="sesli sohbet"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                            android:id="@+id/group_weekdays"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/linearLayout6"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tbgChildSpacing="auto"
+                            app:tbgChildSpacingForLastRow="align"
+                            app:tbgRowSpacing="8dp">
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/lb_sun"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ACIK" />
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/lb_mon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="KAPALI" />
+
+
+                        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_margin="7dp"
+                    app:cardBackgroundColor="#B3ACAC">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+
+
+                            android:id="@+id/linearLayout5"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="#9EF6D5D5"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="125dp"
+                                android:fontFamily="@font/font2"
+                                android:gravity="center"
+                                android:text="Rankınız nedir"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                            android:id="@+id/ranked_grup"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tbgChildSpacing="auto"
+                            app:tbgChildSpacingForLastRow="align"
+                            app:tbgRowSpacing="8dp">
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/ranked_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DEMİR" />
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/ranked_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BRONZ" />
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/ranked_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="GÜMÜŞ" />
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/ranked_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ALTIN" />
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/ranked_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PLATİN" />
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/ranked_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ELMAS" />
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/ranked_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ÖLÜMSÜZLÜK" />
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/ranked_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RADYANT" />
+                        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="7dp"
+                    app:cardBackgroundColor="#B3ACAC">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+
+                            android:id="@+id/linearLayout4"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="#9EF6D5D5"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:fontFamily="@font/font2"
+                                android:gravity="center"
+                                android:text="sesli sohbet"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                            android:id="@+id/cinsiyet_grup"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tbgChildSpacing="auto"
+                            app:tbgChildSpacingForLastRow="align"
+                            app:tbgRowSpacing="8dp">
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/kiz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="KIZ" />
+
+                            <com.nex3z.togglebuttongroup.button.LabelToggle
+                                android:id="@+id/erkek"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ERKEK" />
+
+
+                        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_margin="7dp"
+                    app:cardBackgroundColor="#B3ACAC">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+
+
+                            android:id="@+id/linearLayout7"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#9EF6D5D5"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/font2"
+                                android:gravity="center"
+                                android:text="Tanim"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textinputlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:hint="(orn. saygı, kill acvısı, takım oyuncusu)"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="30"
+                            app:errorEnabled="true"
+                            app:helperTextTextColor="#F3F3F3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/textInputEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:maxLength="30" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardBackgroundColor="#9E987DB1"
+                    app:cardCornerRadius="35dp"
+                    app:cardElevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ProgressBar
+                            android:id="@+id/progresBar"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/loginBTN"
+                            android:visibility="gone">
+
+                        </ProgressBar>
+
+                        <TextView
+                            android:id="@+id/loginBTN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Güncelle"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/font2"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

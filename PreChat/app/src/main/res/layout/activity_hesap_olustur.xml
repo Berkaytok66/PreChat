@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:id="@+id/linearlayout2"
+    android:background="@drawable/login_bacgrount_grandient_list"
+    tools:context=".Activite.HesapOlusturActivity">
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bas_linear"
+        android:orientation="horizontal" />
+    <LinearLayout
+
+        android:id="@+id/linear_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputKullaniciAdiLayout"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Kullanıcı Adı Belirleyin"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperText="Gerekli*"
+            app:helperTextTextColor="#F3F3F3"
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputKullaniciAdiEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/trans"
+                android:maxLength="20" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_btn"
+        android:layout_width="350dp"
+        android:layout_below="@id/linear_layout_1"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/back_buton"
+            android:layout_width="wrap_content"
+            android:text="geri"
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:fontFamily="@font/font2"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:fontFamily="@font/font2"
+            android:text="İleri"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_layout_2"
+        android:visibility="invisible"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputGmailLayout"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:hint="E-MAİL Adresi belirleyin"
+
+            app:counterEnabled="true"
+            app:counterMaxLength="40"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperText="Gerekli*"
+            app:helperTextTextColor="#FFFFFF"
+            app:hintTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputGmailEditText"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/trans"
+                android:maxLength="40" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_layout_3"
+        android:visibility="invisible"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputSifreLayout"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:hint="Bir Şifre Belirleyin"
+            app:counterEnabled="true"
+            android:layout_marginBottom="-10dp"
+            app:counterMaxLength="15"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:helperText="Gerekli*"
+            app:helperTextTextColor="#FFFFFF"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/key">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputSifreEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:background="@color/trans"
+
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/zaten_hesabim_var"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_btn"
+        android:background="@color/trans"
+        android:fontFamily="@font/font2"
+        android:text="zaten hesabım var" />
+
+
+</RelativeLayout>

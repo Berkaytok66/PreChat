@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="8dp"
+    android:id="@+id/mesajlar_oncilick"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mesajlar_item_profil_photo"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/mesajlar_kullanici_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/mesajlar_item_profil_photo"
+            android:fontFamily="@font/font2"
+            android:textColor="@color/black"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/mesajlar_item_profil_photo"
+            android:layout_below="@+id/mesajlar_kullanici_name"
+            android:fontFamily="@font/font1"
+
+
+            android:id="@+id/mesajlar_son_mesaj"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+
+            android:textStyle="italic"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

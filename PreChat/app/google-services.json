@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "569667404038",
+    "project_id": "prechat-5ecf1",
+    "storage_bucket": "prechat-5ecf1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569667404038:android:47c82b5f0dd724bb709e87",
+        "android_client_info": {
+          "package_name": "com.prechat.prechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569667404038-90aglcer3hunehle1h5adob3stt5m13j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgXcuZeVLXTmJ0cGiyIKUX6WWaHhUZWoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569667404038-90aglcer3hunehle1h5adob3stt5m13j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
